@@ -1,5 +1,7 @@
 v4.0.3
+
 **Source code:**
+
 The `name` variable is used in the construction of the command string in the `lintFix` function:
 ```
 const lintFix = (name, path) => {
