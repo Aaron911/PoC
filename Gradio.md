@@ -4,7 +4,7 @@
 
 ### description
 
-When Jinja2 is rendering, it does not check the user input, resulting in code injection.
+When users generate pyi, they do not check the input, which leads to code injection by jinja2 during rendering.
 
 ### Source code
 
