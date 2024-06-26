@@ -1,8 +1,8 @@
-### Version
+# Version
 latest(2024.6.26)
-### Description
+# Description
 At the `/api/get-browser-snapshot` endpoint, the snapshot_path value is not checked, resulting in path traversal which allow attackers to get any file of the system. 
-### Source code
+# Source code
 ```python
 @app.route("/api/get-browser-snapshot", methods=["GET"])
 @route_logger(logger)
@@ -41,3 +41,5 @@ daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 ...
 ```
+# Impact
+Arbitrary file read or RCE
